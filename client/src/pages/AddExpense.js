@@ -16,7 +16,7 @@ function AddExpense() {
    }
    try {
      await axios.post(
-       "https://spendsmart-wa7d.onrender.com/api/expenses",
+       "https://spendsmart-backend-78y2.onrender.com/api/expenses",
        {
          title,
          amount,

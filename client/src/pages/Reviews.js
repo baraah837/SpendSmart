@@ -11,7 +11,7 @@ function Reviews() {
  }, []);
  const fetchReviews = async () => {
    try {
-     const response = await axios.get("https://spendsmart-wa7d.onrender.com/api/reviews", {
+     const response = await axios.get("https://spendsmart-backend-78y2.onrender.com/api/reviews", {
        headers: {
          Authorization: token
        }
@@ -25,7 +25,7 @@ function Reviews() {
    e.preventDefault();
    try {
      await axios.post(
-       "https://spendsmart-wa7d.onrender.com/api/reviews",
+       "https://spendsmart-backend-78y2.onrender.com/api/reviews",
        {
          rating,
          comment
@@ -47,7 +47,7 @@ function Reviews() {
  };
  const deleteReview = async (id) => {
    try {
-     await axios.delete(`https://spendsmart-wa7d.onrender.com/api/reviews/${id}`, {
+     await axios.delete(`https://spendsmart-backend-78y2.onrender.com/api/reviews/${id}`, {
        headers: {
          Authorization: token
        }

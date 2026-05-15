@@ -22,7 +22,7 @@ function Register() {
 
       await axios.post(
 
-        "https://spendsmart-wa7d.onrender.com/api/register",
+        "https://spendsmart-backend-78y2.onrender.com/api/register",
 
         {
 

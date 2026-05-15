@@ -11,7 +11,7 @@ function ExpensesList() {
  }, []);
  const fetchExpenses = async () => {
    try {
-     const response = await axios.get("https://spendsmart-wa7d.onrender.com/api/expenses", {
+     const response = await axios.get("https://spendsmart-backend-78y2.onrender.com/api/expenses", {
        headers: {
          Authorization: token
        }
@@ -27,7 +27,7 @@ function ExpensesList() {
    );
    if (!confirmDelete) return;
    try {
-     await axios.delete(`https://spendsmart-wa7d.onrender.com/api/expenses/${id}`, {
+     await axios.delete(`https://spendsmart-backend-78y2.onrender.com/api/expenses/${id}`, {
        headers: {
          Authorization: token
        }
