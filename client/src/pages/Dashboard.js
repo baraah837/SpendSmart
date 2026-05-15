@@ -17,7 +17,7 @@ function Dashboard() {
  }, []);
  const fetchProfile = async () => {
    try {
-     const response = await axios.get("http://localhost:5000/api/profile", {
+     const response = await axios.get("https://spendsmart-wa7d.onrender.com/api/profile", {
        headers: {
          Authorization: token
        }
@@ -29,7 +29,7 @@ function Dashboard() {
  };
  const fetchExpenses = async () => {
    try {
-     const response = await axios.get("http://localhost:5000/api/expenses", {
+     const response = await axios.get("https://spendsmart-wa7d.onrender.com/api/expenses", {
        headers: {
          Authorization: token
        }

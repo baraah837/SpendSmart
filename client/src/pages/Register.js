@@ -22,7 +22,7 @@ function Register() {
 
       await axios.post(
 
-        "http://localhost:5000/api/register",
+        "https://spendsmart-wa7d.onrender.com/api/register",
 
         {
 

@@ -24,7 +24,7 @@ function Profile() {
 
     try {
 
-      const response = await axios.get("http://localhost:5000/api/profile", {
+      const response = await axios.get("https://spendsmart-wa7d.onrender.com/api/profile", {
 
         headers: {
 
@@ -76,7 +76,7 @@ function Profile() {
 
       const response = await axios.put(
 
-        "http://localhost:5000/api/profile",
+        "https://spendsmart-wa7d.onrender.com/api/profile",
 
         {
 

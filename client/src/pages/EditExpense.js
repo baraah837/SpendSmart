@@ -32,7 +32,7 @@ function EditExpense() {
 
     try {
 
-      const response = await axios.get(`http://localhost:5000/api/expenses`);
+      const response = await axios.get(`https://spendsmart-wa7d.onrender.com/api/expenses`);
 
       const selectedExpense = response.data.find((item) => item._id === id);
 
@@ -82,7 +82,7 @@ function EditExpense() {
 
     try {
 
-      await axios.put(`http://localhost:5000/api/expenses/${id}`, updatedData);
+      await axios.put(`https://spendsmart-wa7d.onrender.com/api/expenses/${id}`, updatedData);
 
       alert("Expense Updated Successfully");
 

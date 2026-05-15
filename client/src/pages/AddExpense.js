@@ -16,7 +16,7 @@ function AddExpense() {
    }
    try {
      await axios.post(
-       "http://localhost:5000/api/expenses",
+       "https://spendsmart-wa7d.onrender.com/api/expenses",
        {
          title,
          amount,
